@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+        //click
+        $(document).ready(function(){
+            $('p').click(function(){
+                $(this).hide();
+            });
+        });
+
+        //dbl click
+        $(document).ready(function(){
+            $("h1").dblclick(function(){
+                $(this).hide();
+            });
+        });
+
+        $(document).ready(function(){
+            $("h3").mouseenter(function(){
+                $(this).hide();
+            });
+        });
+
+        $(document).ready(function(){
+            $("h4").mouseleave(function(){
+                $(this).hide();
+            });
+        });
+
+        $(document).ready(function(){
+            $("h2").dblclick(function(){
+                $(this).click(function(){
+                    $(this).hide()
+                });
+            });
+        });
+
+        //alert 
+
+        $(document).ready(function(){
+            $("#d1").mouseenter(function(){
+                alert("Welcome");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#d2").mousedown(function(){
+                alert("Welcome friendz");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#d3").mouseleave(function(){
+                alert("hi ...hello...");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#d4").mousemove(function(){
+                alert("Who are you....");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#d5").mouseout(function(){
+                alert("What are you doing");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#d6").mouseover(function(){
+                alert("i love coding");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#d7").mouseup(function(){
+                alert("fake");
+            });
+        });
+
+        //EFFENTS IN JQUERY
+
+        $(document).ready(function(){
+            $("button").click(function(){
+                $('#e1').fadeOut()
+                $('#e2').fadeIn("slow")
+            });
+        });
+
+        $(document).ready(function(){
+            $('#btn1').click(function(){
+                $('#e3').fadeToggle()
+                $('#e4').fadeToggle("slow")
+            });
+        });
+
+
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#p1").hide(2000)
+            });
+        });
+
+         $(document).ready(function(){
+            $("button").click(function(){
+                $("#p1").toggle();
+            });
+        });
+
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").fadeTo("slow",0.15);
+                $("#div2").fadeTo("slow",0.0);
+                $("#div3").fadeTo("slow",0.07);
+            });
+        });
+
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#d4").slideDown('slow')
+                $("#d5").slideUp("slow")
+            });
+        });
+
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#g5").slideToggle("slow")
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <!--=== click ===-->
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <br>
+    <hr>
+
+    <!--=== DBLclick ===-->
+    <h1>Lorem, ipsum dolor.</h1>
+
+    <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, dolorem.</h2>
+
+    <h3>Lorem ipsum dolor sit.</h3>
+    <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+    <br>
+    <hr>
+
+    <!-- alert -->
+    <div id="d1">1.Lorem, ipsum dolor.</div><br>
+    <div id="d2">2.Lorem, ipsum dolor.</div><br>
+    <div id="d3">3.Lorem, ipsum dolor.</div><br>
+    <div id="d4">4.Lorem, ipsum dolor.</div><br>
+    <div id="d5">5.Lorem, ipsum dolor.</div><br>
+    <div id="d6">6.Lorem, ipsum dolor.</div><br>
+    <div id="d7">7.Lorem, ipsum dolor.</div>
+    <br>
+    <hr>
+
+    <!-- effect in jquery -->
+<button>Click Me</button>
+<div id="e1">King</div>
+<div id="e2">NightKing</div>
+<br>
+<hr>
+
+<button id="btn1">Click meee</button>
+<div id="e3" style="height: 100px; width: 100px; background-color: blueviolet;"></div><br>
+<div id="e4" style="height: 100px; width: 100px; background-color: blue;"></div>
+</body>
+</html>
